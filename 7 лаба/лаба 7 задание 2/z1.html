@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="left-links">
+            <a href="#">Shop All</a>
+            <a href="#">Save on Sets</a>
+            <a href="#">Plastic Offsets</a>
+        </nav>
+        
+        <div class="center-text">by Humankind</div>
+        
+        <nav class="right-links">
+            <a href="#">Free Shipping Always</a>
+            <a href="#">Account</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+    <div class="carousel">
+        <div class="picture active" style="background-image: url('img/image_1.png');">
+            <div class="txt1">
+                Our best-selling refillable deodorant, in a new scent for summer.<br>
+                Shop Lemongrass   
+            </div> 
+            <button class="button1">Shop now</button> 
+        </div>
+        <div class="picture" style="background-image: url('img/image_2.png');">
+            <!-- Содержимое для второго слайда -->
+        </div>
+        <div class="picture" style="background-image: url('img/image_3.png');">
+            <!-- Содержимое для третьего слайда -->
+        </div>
+        <div class="carousel-controls">
+            <div class="control active" onclick="setCurrentSlide(0)"></div>
+            <div class="control" onclick="setCurrentSlide(1)"></div>
+            <div class="control" onclick="setCurrentSlide(2)"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>  
+
+    <div class="block2">
+    <div class="poloska"></div>
+      <div class="txt2"> 
+        <h2>
+            Designed to reduce single-use plastic waste in your daily routine. Scientifically-proven to perform.
+        </h2>
+      </div>
+    </div> 
+    <div class="gallery">
+        <div class="image-container">
+          <img src="img/Rectangle1.png">
+          <div class="text-overlay title"> shower routine set - $46 </div>
+          <div class="text-overlay description">
+             All- natural shampoo, conditioner formulated to nourish your hair & skin.
+          </div>           
+          <button>Quick Add</button>
+        </div>
+        <div class="image-container">
+          <img src="img/Rectangle2.png" >
+          <div class="text-overlay title"> summer routine set - $50 </div>
+          <div class="text-overlay description">
+             Best sellers that are great for travel, indcluding in our new Lemongrass scent.
+          </div>           
+          <button>Quick Add</button>
+        </div>
+        <div class="image-container">
+          <img src="img/Rectangle3.png">
+          <div class="text-overlay title"> dental routine set - $36 </div>
+          <div class="text-overlay description">
+             toothpaste, mouthwash, and floss formulated for healthy teeth & designed for a healthy planet. <br> get $9 off.
+          </div>           
+          <button>Quick Add</button>
+        </div>
+        <div class="image-container">
+          <img src="img/Rectangle4.png">
+          <div class="text-overlay title"> hair care set - $35 </div>
+          <div class="text-overlay description">
+             All natural shampoo and conditioner formulated tp cleanse & hydrate your hair. <br> get $15 off. 
+          </div>           
+          <button>Quick Add</button>
+        </div>
+      </div>
+      <div class="poloska"></div>
+      <div class="content-container2">
+        <div class="image-side2">
+          <img src="img/Rectangle5.png" alt="Product Packaging">
+        </div>
+        <div class="text-side2">
+          <div class="text-middle2">
+            <div>Get early access to new products by signing up for bH texts.</div>
+          </div>
+          <div class="text-bottom-left2">
+            <a href="link-to-signup" class="signup-link2">sign up for texts</a>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="poloska"></div>
+
+      <div class="content-container3">
+        <div class="text-side3">
+          <div class="text-middle3">
+            <div>every day, 28 000 tons of single use plastic is disponsed into our oceans.</div>
+            <br>
+            <div>Starting today, you can fight this flow of plastic waste, just by getting ready in the morning.</div>
+          </div>
+          <div class="text-bottom-left3">
+            <a href="link-to-signup" class="signup-link3">the plastic crisis</a>
+          </div>
+        </div>
+        <div class="image-side3">
+            <img src="img/Rectangle6.png" alt="Product Packaging">
+          </div>
+      </div>
+      <br>
+      <div class="poloska"></div>
+      <div class="content-container4">
+        <div class="image-side4">
+          <img src="img/Rectagle7.png" alt="Product Packaging">
+        </div>
+        <div class="text-side4">
+          <div class="text-middle4">
+            <div>Formulated with purpose, designed for impact.</div>
+               <br>
+            <div>Our products are made with clean ingredients - sourced and formulated for your body and our planet.</div>
+          </div>
+          <div class="text-bottom-left4">
+            <a href="learn more" class="signup-link4">learn more</a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="poloska"></div>
+      <br>
+      <div class="carousel-container">
+        <div class="carousel-slide active">
+          <p class="quote-source">teen vogue</p>
+          <blockquote class="txt-carousel">"Beautifully designed bathroom essentials in solid, no-waste packaging and refillable containers."</blockquote>
+          <a href="link-to-press" class="all-press-link">see all press</a>
+          <div class="carousel-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+        <!-- Дополнительные .carousel-slide для каждого слайда -->
+      </div>
+    </div> 
+    <br>
+      
+    <div class="gallery">
+        <div class="image-container">
+          <img src="img/Rectangle1.png">
+          <div class="text-overlay title"> toothpaste - $15 </div>
+          <div class="text-overlay description">
+             100% natural toothpaste in table form, designed to polish and strengthen your teeth without the plastic waste.
+          </div>           
+          <button>Quick Add</button>
+        </div>
+        <div class="image-container">
+          <img src="img/Rectangle2.png" >
+          <div class="text-overlay title"> deodorant - $15 </div>
+          <div class="text-overlay description">
+             Natural, aluminium-free deodorant in a revolutionary, refillable container designed to reduce plastic waste.
+          </div>           
+          <button>Quick Add</button>
+        </div>
+        <div class="image-container">
+          <img src="img/Rectangle3.png">
+          <div class="text-overlay title"> floss - $15 </div>
+          <div class="text-overlay description">
+            100% biodegradable floss in a durable, refillable container designed to reduce the single-use plastic in your oral care routine.
+          </div>           
+          <button>Quick Add</button>
+        </div>
+        <div class="image-container">
+          <img src="img/Rectangle4.png">
+          <div class="text-overlay title"> hand sanitizer - $15 </div>
+          <div class="text-overlay description">
+            A moisturizing hand sanitizer designed to reduce single-use plastic waste while on the go. 65% alcohol.
+          </div>           
+          <button>Quick Add</button>
+        </div>
+      </div>
+      <div class="poloska"></div>
+      <br>
+      <div class="txt-aquarel">"The shampoo bar works so freaking good and smells amazing!"</div>
+    </div>
+    <div class="poloska"></div>
+
+    <div class="content-container4">
+        <div class="image-side4">
+          <img src="img/Rectangle7.png" alt="Product Packaging">
+        </div>
+        <div class="text-side4">
+          <div class="text-middle4">
+            <div>In one year, you`ll save our planet from up to 5 pounds of single-use plastic waste.</div>
+            <br>
+            <div>Our collective plastic redustion grows over time, creating quantifiable and meaningful impact.</div>
+          </div>
+          <div class="text-bottom-left4">
+            <a href="learn more" class="signup-link4">here`s now</a>
+          </div>
+        </div>
+      </div>
+<br>
+<div class="hero-section">
+    <div class="hero-text">
+      <h1>One routine can help shape our planet's future — <span class="emphasis">yours</span>.</h1>
+      <a href="link-to-shop" class="shop-button">Shop Now</a>
+    </div>
+  </div>
+  <br>
+  <div class="poloska"></div>
+  <br>
+  <footer class="footer-container">
+  <div class="footer-section">
+    <h4>Help -</h4>
+    <ul>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#account">Your Account</a></li>
+      <li><a href="mailto:support@example.com">E-mail Us</a></li>
+      <li><a href="sms:+123456789">Text Us</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h4>Connect -</h4>
+    <ul>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#wholesale">Wholesale</a></li>
+      <li><a href="#press">Press</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h4>Info -</h4>
+    <ul>
+      <li><a href="#returns">Returns + Guarantee</a></li>
+      <li><a href="#terms">Terms of Use</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#accessibility">Accessibility</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h4>Community -</h4>
+    <ul>
+      <li><a href="https://instagram.com">Instagram</a></li>
+      <li><a href="https://twitter.com">Twitter</a></li>
+      <li><a href="https://facebook.com">Facebook</a></li>
+    </ul>
+  </div>
+
+</body>
+</html>

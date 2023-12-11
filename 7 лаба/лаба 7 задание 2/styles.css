@@ -1,0 +1,523 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+
+.site-header nav a {
+  text-decoration: none;
+  color: green;
+  padding: 0 10px;
+}
+
+.center-text {
+  flex-grow: 1;
+  text-align: center;
+  color: green;
+}
+
+.left-links {
+  flex-grow: 1;
+}
+
+.right-links {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.carousel{
+  display: flex;
+  padding-top: 10px;
+  height: 40em;
+}
+
+.picture {
+  display: none;
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100%;  /* Скрыть все слайды по умолчанию */
+  justify-content: space-around;
+  padding-top: 200px;
+  position:absolute;
+}
+
+
+.picture.active { /* Показываем активный слайд */
+  display: flex;
+  position: relative;
+  background-size: cover;
+}
+
+.txt1 {
+  font-size: 2em;
+  color: white;
+}
+
+.button1 {
+  background-color: #dcf900;
+  width: 200px;       
+  height: 50px;     
+  text-align: center;  
+  line-height: 50px;   
+  border: none;       
+  cursor: pointer;
+  font-size: 20px;
+  text-wrap: no;
+}
+
+.carousel-controls {
+  position:absolute;
+  align-self: flex-end;
+  right: 10px;
+  padding-bottom: 10px;
+}
+
+.control {
+  width: 1em;
+  height: 1em;
+  border: 2px solid white;
+  background-color: transparent;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.control.active {
+  background-color: white;
+}
+
+.poloska{
+  height: 3px;
+  background-color: #285e2d; 
+  margin: 1em 5em; /* Отступ сверху и снизу */
+}
+
+.txt2{
+  color: #285e2d;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  width: 25em; /* Задайте нужную ширину */
+  word-wrap: break-word; /* Перенос слов, выходящих за границы блока */
+  margin: 5em auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Выравнивание элементов в начале контейнера */
+  padding: 1em; /* Отступ от краёв контейнера, равный зазорам между элементами */
+}
+
+.image-container {
+  position: relative;
+  width: calc(50% - 1em); /* Вычитаем половину отступа, так как отступы добавляются с обеих сторон */
+  margin: 0 0.5em 1em 0.5em; /* Отступы со всех сторон: сверху 0, справа и слева по 0.5em, снизу 1em */
+  text-align: center; /* Центрирование кнопки под изображением */
+}
+
+.text-overlay {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; 
+  width: 80%;
+  text-align: center;
+}
+
+.text-overlay.title {
+  top: 5%; 
+  font-size:3em;
+}
+
+.text-overlay.description {
+  top: 13%; 
+  font-size:2em;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Делаем изображение квадратным */
+  object-fit: cover; /* Обрезаем изображение, чтобы оно заполнило контейнер */
+  margin-bottom: -4px; /* Устраняем зазор между картинкой и кнопкой */
+}
+
+.image-container div {
+  position: absolute; /* Абсолютное позиционирование для текста */
+  top: 10%; /* Расстояние от верха контейнера */
+  left: 50%; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Сдвигаем текст на половину его ширины назад, чтобы центрировать точно */
+  color: white; /* Цвет текста, можно изменить */
+  width: 80%; /* Ширина текстового блока, можно изменить */
+  text-align: center; /* Выравнивание текста по центру */
+} 
+
+.image-container button {
+  height: 5em;
+  width: 100%; /* Кнопка по ширине изображения */
+  padding: 10px 0; /* Паддинг для кнопки */
+  border: none; /* Убираем границу кнопки */
+  background-color: #dcf900; /* Задаём цвет кнопки, можно заменить на нужный цвет */
+  color: #000; /* Цвет текста на кнопке */
+  border-radius: 0; /* Убираем скругление углов */
+  cursor: pointer; /* Стиль курсора при наведении на кнопку */
+  font-size: 20px;
+}
+
+
+.content-container2 {
+  margin-top: 3em;
+  display: flex;
+  width: 100%; /* или max-width, если нужно ограничить ширину блока */
+}
+
+.image-side2 {
+  flex: 1;
+  padding-left: 10px; /* добавляем небольшой отступ слева */
+}
+
+.image-side2 img {
+  width: calc(100% - 10px); /* учитываем отступ в ширине изображения */
+  height: auto;
+  display: block; /* избавляемся от стандартных отступов изображения */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.text-side2 {
+  flex: 0 0 50%; /* Устанавливаем ширину 50%, без возможности роста или сжатия */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрируем текст по вертикали */
+  align-items: center; /* Центрируем текст по горизонтали */
+}
+
+.text-middle2 {
+  margin-top:5em; 
+  font-size: 3em;
+  color: #285e2d; /* Зеленый цвет текста */
+  text-align: center; /* Центрирование текста по горизонтали */
+}
+
+.text-bottom-left2 {
+  color: #285e2d; /* Зеленый цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  align-self: flex-start; /* Выравнивание ссылки к левому краю */
+  margin-top: auto; /* Отталкивает ссылку вниз контейнера */
+  padding: 10px 0; /* Отступ для ссылки */
+}
+
+.signup-link2 {
+  color: #285e2d; /* цвет текста ссылки */
+  text-decoration: none; /* убираем подчеркивание */
+  font-weight: bold; /* делаем текст жирным */
+}
+
+/* Адаптивный медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .content-container2 {
+    flex-direction: column;
+  }
+
+  .image-side2, .text-side2 {
+    width: 100%;
+  }
+
+  .image-side2 img {
+    width: 100%; /* возвращаем ширину изображения на 100% для мобильных устройств */
+  }
+
+  .text-side2 {
+    align-items: flex-start; /* выравниваем текст по левому краю для мобильных устройств */
+  }
+}
+
+
+.content-container3 {
+  margin-top: 3em;
+  display: flex;
+  width: 100%; /* или max-width, если нужно ограничить ширину блока */
+}
+
+.text-side3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрируем текст по вертикали */
+  align-items: left; /* Центрируем текст по горизонтали */
+  padding: 20px;
+}
+
+.text-middle3 {
+  font-size: 3em;
+  color: #285e2d; /* Зеленый цвет текста */
+  text-align: left; /* Центрирование текста по горизонтали */
+}
+
+.text-bottom-left3 {
+  align-self: flex-start;
+  color: #285e2d; /* Зеленый цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  margin-top: auto; /* Отталкивает ссылку вниз контейнера */
+  padding: 10px 0; /* Отступ для ссылки */
+}
+
+.signup-link3 {
+  color: #285e2d; /* цвет текста ссылки */
+  text-decoration: none; /* убираем подчеркивание */
+  font-weight: bold; /* делаем текст жирным */
+}
+
+.image-side3 {
+  flex: 1;
+  padding-left: 10px; /* добавляем небольшой отступ слева */
+}
+
+.image-side3 img {
+  width: calc(100% - 10px); /* учитываем отступ в ширине изображения */
+  height: auto;
+  display: block; /* избавляемся от стандартных отступов изображения */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Адаптивный медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .content-container3 {
+    flex-direction: column;
+  }
+
+  .text-side3, .image-side3 {
+    width: 100%;
+  }
+
+  .text-side3 {
+    order: 1; /* Текст будет первым */
+  }
+
+  .image-side3 {
+    order: 2; /* Изображение будет вторым */
+    padding-left: 0;
+  }
+
+  .image-side3 img {
+    width: 100%; /* возвращаем ширину изображения на 100% для мобильных устройств */
+  }
+}
+
+.content-container4 {
+  margin-top: 3em;
+  display: flex;
+  width: 100%; /* или max-width, если нужно ограничить ширину блока */
+}
+
+.image-side4 {
+  flex: 1;
+  padding-left: 10px; /* добавляем небольшой отступ слева */
+}
+
+.image-side4 img {
+  width: calc(100% - 10px); /* учитываем отступ в ширине изображения */
+  height: auto;
+  display: block; /* избавляемся от стандартных отступов изображения */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.text-side4 {
+  flex: 0 0 50%; /* Устанавливаем ширину 50%, без возможности роста или сжатия */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрируем текст по вертикали */
+  align-items: left; /* Центрируем текст по горизонтали */
+}
+
+.text-middle4 {
+  font-size: 3em;
+  color: #285e2d; /* Зеленый цвет текста */
+  text-align: left; /* Центрирование текста по горизонтали */
+}
+
+.text-bottom-left4 {
+  color: #285e2d; /* Зеленый цвет текста */
+  text-decoration: none; /* Убираем подчеркивание */
+  align-self: flex-start; /* Выравнивание ссылки к левому краю */
+  margin-top: auto; /* Отталкивает ссылку вниз контейнера */
+  padding: 10px 0; /* Отступ для ссылки */
+}
+
+.signup-link4 {
+  color: #285e2d; /* цвет текста ссылки */
+  text-decoration: none; /* убираем подчеркивание */
+  font-weight: bold; /* делаем текст жирным */
+}
+
+/* Адаптивный медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .content-container4 {
+    flex-direction: column;
+  }
+
+  .image-side4, .text-side4 {
+    width: 100%;
+  }
+
+  .image-side4 img {
+    width: 100%; /* возвращаем ширину изображения на 100% для мобильных устройств */
+  }
+
+  .text-side4 {
+    align-items: flex-start; /* выравниваем текст по левому краю для мобильных устройств */
+  }
+}
+
+.carousel-container {
+  text-align: center; /* Центрируем содержимое */
+  max-width: 800px; /* Примерная максимальная ширина */
+  margin: auto;
+  position: relative;
+}
+
+.quote-source {
+  color: #008080; /* Цвет текста для источника цитаты */
+  font-size: 2em; /* Размер шрифта для источника цитаты */
+  margin-bottom: 0.5em; /* Отступ снизу */
+}
+
+blockquote {
+  font-size: 3em; /* Размер шрифта для цитаты */
+  color: #285e2d; /* Цвет текста цитаты */
+  margin-bottom: 3em; /* Отступ снизу */
+}
+
+.all-press-link {
+  color: #285e2d; /* Цвет ссылки */
+  text-decoration: none; /* Убираем подчеркивание */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0; /* Прижимаем к левому краю контейнера */
+  bottom: 0; /* Прижимаем к нижнему краю контейнера */
+  padding: 10px; /* Добавьте отступ, если нужно */
+  /* Остальные стили остаются без изменений */
+  font-size: 2em;
+  margin-left: -15em;
+}
+
+.carousel-indicators {
+  /* Расположение индикаторов */
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px; /* Размер квадратиков */
+  height: 10px; /* Размер квадратиков */
+  background-color: #bbb; /* Цвет ненаведенного индикатора */
+  margin: 0 5px; /* Отступы вокруг индикаторов */
+}
+
+.indicator.active {
+  background-color: #008080; /* Цвет активного индикатора */
+}
+
+.txt-aquarel{
+  font-size: 3em;
+  color: #285e2d;
+  text-align: center;
+  margin-top: 3em;
+  width: 12em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+
+
+
+.hero-section {
+  background-image: url('img/Rectangle8.png');
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding: 100px; /* Подстройте этот отступ под ваш макет */
+  color: #285e2d; /* Или любой другой цвет текста, который хорошо виден на вашем фоне */
+  height: 10em;
+  font-size: 20px;
+}
+
+.hero-text {
+  margin-top: 100px;
+  max-width: 600px; /* Или ширина, которая вам нужна */
+  text-align: center;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2em; /* Или размер, который вам нужен */
+  font-weight: bold; /* Для более жирного шрифта */
+  margin-bottom: 20px; /* Отступ перед кнопкой */
+}
+
+.emphasis {
+  color: #285e2d; /* Цвет для выделения части заголовка */
+}
+
+.shop-button {
+  display: inline-block; /* Чтобы кнопка не растягивалась на всю ширину */
+  padding: 10px 20px;
+  border: 2px solid #285e2d; /* Граница кнопки */
+  text-decoration: none; /* Убрать подчеркивание у ссылки */
+  color: #285e2d; /* Цвет текста ссылки */
+  background-color: transparent; /* Прозрачный фон */
+  font-size: 1em; /* Размер текста в кнопке */
+}
+
+/* Добавьте медиа-запросы для адаптивного дизайна */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px; /* Меньше отступы для мобильных устройств */
+  }
+
+  .hero-text {
+    max-width: 100%; /* Чтобы текст занимал всю ширину */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Меньший размер шрифта для мобильных устройств */
+  }
+
+  .shop-button {
+    padding: 8px 16px; /* Меньший паддинг для кнопки на мобильных устройствах */
+  }
+}
+
+
+.footer-container {
+  color: #285e2d; /* Белый текст */
+  display: flex;
+  justify-content: space-between; /* Распределение по ширине */
+  padding: 20px; /* Отступы внутри футера */
+  font-family: Arial, sans-serif; /* Шрифт, как на изображении */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px; /* Отступ заголовка от списка */
+}
+
+.footer-section ul {
+  list-style: none; /* Убираем стандартные маркеры списка */
+  padding: 0; /* Убираем стандартные отступы списка */
+}
+
+.footer-section ul li a {
+  color: #285e2d; /* Белый текст ссылок */
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
+  font-size: 0.9em; /* Размер текста ссылок */
+}
