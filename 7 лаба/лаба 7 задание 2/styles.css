@@ -99,30 +99,30 @@ body {
 .poloska{
   height: 3px;
   background-color: #285e2d; 
-  margin: 1em 5em; /* Отступ сверху и снизу */
+  margin: 1em 5em; 
 }
 
 .txt2{
   color: #285e2d;
   text-align: center;
   font-family: Arial, sans-serif;
-  width: 25em; /* Задайте нужную ширину */
-  word-wrap: break-word; /* Перенос слов, выходящих за границы блока */
+  width: 25em;
+  word-wrap: break-word; 
   margin: 5em auto;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Выравнивание элементов в начале контейнера */
-  padding: 1em; /* Отступ от краёв контейнера, равный зазорам между элементами */
+  justify-content: flex-start; 
+  padding: 1em;
 }
 
 .image-container {
   position: relative;
-  width: calc(50% - 1em); /* Вычитаем половину отступа, так как отступы добавляются с обеих сторон */
-  margin: 0 0.5em 1em 0.5em; /* Отступы со всех сторон: сверху 0, справа и слева по 0.5em, снизу 1em */
-  text-align: center; /* Центрирование кнопки под изображением */
+  width: calc(50% - 1em); 
+  margin: 0 0.5em 1em 0.5em; 
+  text-align: center; 
 }
 
 .text-overlay {
@@ -147,30 +147,30 @@ body {
 .image-container img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1; /* Делаем изображение квадратным */
-  object-fit: cover; /* Обрезаем изображение, чтобы оно заполнило контейнер */
-  margin-bottom: -4px; /* Устраняем зазор между картинкой и кнопкой */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: -4px; 
 }
 
 .image-container div {
-  position: absolute; /* Абсолютное позиционирование для текста */
-  top: 10%; /* Расстояние от верха контейнера */
-  left: 50%; /* Центрирование по горизонтали */
-  transform: translateX(-50%); /* Сдвигаем текст на половину его ширины назад, чтобы центрировать точно */
-  color: white; /* Цвет текста, можно изменить */
-  width: 80%; /* Ширина текстового блока, можно изменить */
-  text-align: center; /* Выравнивание текста по центру */
+  position: absolute; 
+  top: 10%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: white; 
+  width: 80%; 
+  text-align: center; 
 } 
 
 .image-container button {
   height: 5em;
-  width: 100%; /* Кнопка по ширине изображения */
-  padding: 10px 0; /* Паддинг для кнопки */
-  border: none; /* Убираем границу кнопки */
-  background-color: #dcf900; /* Задаём цвет кнопки, можно заменить на нужный цвет */
-  color: #000; /* Цвет текста на кнопке */
-  border-radius: 0; /* Убираем скругление углов */
-  cursor: pointer; /* Стиль курсора при наведении на кнопку */
+  width: 100%; 
+  padding: 10px 0; 
+  border: none;
+  background-color: #dcf900;
+  color: #000; 
+  border-radius: 0; 
+  cursor: pointer; 
   font-size: 20px;
 }
 
@@ -178,52 +178,51 @@ body {
 .content-container2 {
   margin-top: 3em;
   display: flex;
-  width: 100%; /* или max-width, если нужно ограничить ширину блока */
+  width: 100%;
 }
 
 .image-side2 {
   flex: 1;
-  padding-left: 10px; /* добавляем небольшой отступ слева */
+  padding-left: 10px; 
 }
 
 .image-side2 img {
-  width: calc(100% - 10px); /* учитываем отступ в ширине изображения */
+  width: calc(100% - 10px); 
   height: auto;
-  display: block; /* избавляемся от стандартных отступов изображения */
+  display: block;
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
 .text-side2 {
-  flex: 0 0 50%; /* Устанавливаем ширину 50%, без возможности роста или сжатия */
+  flex: 0 0 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Центрируем текст по вертикали */
-  align-items: center; /* Центрируем текст по горизонтали */
+  justify-content: center;
+  align-items: center; 
 }
 
 .text-middle2 {
   margin-top:5em; 
   font-size: 3em;
-  color: #285e2d; /* Зеленый цвет текста */
-  text-align: center; /* Центрирование текста по горизонтали */
+  color: #285e2d; 
+  text-align: center; 
 }
 
 .text-bottom-left2 {
-  color: #285e2d; /* Зеленый цвет текста */
-  text-decoration: none; /* Убираем подчеркивание */
-  align-self: flex-start; /* Выравнивание ссылки к левому краю */
-  margin-top: auto; /* Отталкивает ссылку вниз контейнера */
-  padding: 10px 0; /* Отступ для ссылки */
+  color: #285e2d; 
+  text-decoration: none;
+  align-self: flex-start; 
+  margin-top: auto; 
+  padding: 10px 0; 
 }
 
 .signup-link2 {
-  color: #285e2d; /* цвет текста ссылки */
-  text-decoration: none; /* убираем подчеркивание */
-  font-weight: bold; /* делаем текст жирным */
+  color: #285e2d; 
+  text-decoration: none;
+  font-weight: bold; 
 }
 
-/* Адаптивный медиа-запрос для мобильных устройств */
 @media (max-width: 768px) {
   .content-container2 {
     flex-direction: column;
@@ -234,11 +233,11 @@ body {
   }
 
   .image-side2 img {
-    width: 100%; /* возвращаем ширину изображения на 100% для мобильных устройств */
+    width: 100%;
   }
 
   .text-side2 {
-    align-items: flex-start; /* выравниваем текст по левому краю для мобильных устройств */
+    align-items: flex-start; 
   }
 }
 
@@ -246,52 +245,51 @@ body {
 .content-container3 {
   margin-top: 3em;
   display: flex;
-  width: 100%; /* или max-width, если нужно ограничить ширину блока */
+  width: 100%;
 }
 
 .text-side3 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Центрируем текст по вертикали */
-  align-items: left; /* Центрируем текст по горизонтали */
+  justify-content: center;
+  align-items: left; 
   padding: 20px;
 }
 
 .text-middle3 {
   font-size: 3em;
-  color: #285e2d; /* Зеленый цвет текста */
-  text-align: left; /* Центрирование текста по горизонтали */
+  color: #285e2d;
+  text-align: left; 
 }
 
 .text-bottom-left3 {
   align-self: flex-start;
-  color: #285e2d; /* Зеленый цвет текста */
-  text-decoration: none; /* Убираем подчеркивание */
-  margin-top: auto; /* Отталкивает ссылку вниз контейнера */
-  padding: 10px 0; /* Отступ для ссылки */
+  color: #285e2d;
+  text-decoration: none; 
+  margin-top: auto; 
+  padding: 10px 0; 
 }
 
 .signup-link3 {
-  color: #285e2d; /* цвет текста ссылки */
-  text-decoration: none; /* убираем подчеркивание */
-  font-weight: bold; /* делаем текст жирным */
+  color: #285e2d; 
+  text-decoration: none; 
+  font-weight: bold;
 }
 
 .image-side3 {
   flex: 1;
-  padding-left: 10px; /* добавляем небольшой отступ слева */
+  padding-left: 10px; 
 }
 
 .image-side3 img {
-  width: calc(100% - 10px); /* учитываем отступ в ширине изображения */
+  width: calc(100% - 10px); 
   height: auto;
-  display: block; /* избавляемся от стандартных отступов изображения */
+  display: block; 
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
-/* Адаптивный медиа-запрос для мобильных устройств */
 @media (max-width: 768px) {
   .content-container3 {
     flex-direction: column;
@@ -302,67 +300,65 @@ body {
   }
 
   .text-side3 {
-    order: 1; /* Текст будет первым */
+    order: 1; 
   }
 
   .image-side3 {
-    order: 2; /* Изображение будет вторым */
+    order: 2; 
     padding-left: 0;
   }
 
   .image-side3 img {
-    width: 100%; /* возвращаем ширину изображения на 100% для мобильных устройств */
+    width: 100%; 
   }
 }
 
 .content-container4 {
   margin-top: 3em;
   display: flex;
-  width: 100%; /* или max-width, если нужно ограничить ширину блока */
+  width: 100%;
 }
 
 .image-side4 {
   flex: 1;
-  padding-left: 10px; /* добавляем небольшой отступ слева */
+  padding-left: 10px;
 }
 
 .image-side4 img {
-  width: calc(100% - 10px); /* учитываем отступ в ширине изображения */
+  width: calc(100% - 10px); 
   height: auto;
-  display: block; /* избавляемся от стандартных отступов изображения */
+  display: block; 
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
 .text-side4 {
-  flex: 0 0 50%; /* Устанавливаем ширину 50%, без возможности роста или сжатия */
+  flex: 0 0 50%; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Центрируем текст по вертикали */
-  align-items: left; /* Центрируем текст по горизонтали */
+  justify-content: center;
+  align-items: left; 
 }
 
 .text-middle4 {
   font-size: 3em;
-  color: #285e2d; /* Зеленый цвет текста */
-  text-align: left; /* Центрирование текста по горизонтали */
+  color: #285e2d; 
+  text-align: left;
 }
 
 .text-bottom-left4 {
-  color: #285e2d; /* Зеленый цвет текста */
-  text-decoration: none; /* Убираем подчеркивание */
-  align-self: flex-start; /* Выравнивание ссылки к левому краю */
-  margin-top: auto; /* Отталкивает ссылку вниз контейнера */
-  padding: 10px 0; /* Отступ для ссылки */
+  color: #285e2d;
+  text-decoration: none; 
+  align-self: flex-start; 
+  margin-top: auto; 
+  padding: 10px 0;
 }
 
 .signup-link4 {
-  color: #285e2d; /* цвет текста ссылки */
-  text-decoration: none; /* убираем подчеркивание */
-  font-weight: bold; /* делаем текст жирным */
-}
+  color: #285e2d; 
+  text-decoration: none; 
+  font-weight: bold; 
 
-/* Адаптивный медиа-запрос для мобильных устройств */
 @media (max-width: 768px) {
   .content-container4 {
     flex-direction: column;
@@ -373,59 +369,54 @@ body {
   }
 
   .image-side4 img {
-    width: 100%; /* возвращаем ширину изображения на 100% для мобильных устройств */
+    width: 100%; 
   }
 
   .text-side4 {
-    align-items: flex-start; /* выравниваем текст по левому краю для мобильных устройств */
+    align-items: flex-start; 
   }
 }
 
 .carousel-container {
-  text-align: center; /* Центрируем содержимое */
-  max-width: 800px; /* Примерная максимальная ширина */
+  text-align: center; 
+  max-width: 800px; 
   margin: auto;
   position: relative;
 }
 
 .quote-source {
-  color: #008080; /* Цвет текста для источника цитаты */
-  font-size: 2em; /* Размер шрифта для источника цитаты */
-  margin-bottom: 0.5em; /* Отступ снизу */
+  color: #008080; 
+  font-size: 2em;
+  margin-bottom: 0.5em; 
 }
 
 blockquote {
-  font-size: 3em; /* Размер шрифта для цитаты */
-  color: #285e2d; /* Цвет текста цитаты */
-  margin-bottom: 3em; /* Отступ снизу */
+  font-size: 3em; 
+  color: #285e2d; 
+  margin-bottom: 3em; 
 }
 
 .all-press-link {
-  color: #285e2d; /* Цвет ссылки */
-  text-decoration: none; /* Убираем подчеркивание */
-  position: absolute; /* Абсолютное позиционирование */
-  left: 0; /* Прижимаем к левому краю контейнера */
-  bottom: 0; /* Прижимаем к нижнему краю контейнера */
-  padding: 10px; /* Добавьте отступ, если нужно */
-  /* Остальные стили остаются без изменений */
+  color: #285e2d; 
+  text-decoration: none; 
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+  padding: 10px; 
   font-size: 2em;
   margin-left: -15em;
 }
 
-.carousel-indicators {
-  /* Расположение индикаторов */
-}
-
 .indicator {
   display: inline-block;
-  width: 10px; /* Размер квадратиков */
-  height: 10px; /* Размер квадратиков */
-  background-color: #bbb; /* Цвет ненаведенного индикатора */
-  margin: 0 5px; /* Отступы вокруг индикаторов */
+  width: 10px;
+  height: 10px; 
+  background-color: #bbb; 
+  margin: 0 5px; 
 }
 
 .indicator.active {
-  background-color: #008080; /* Цвет активного индикатора */
+  background-color: #008080; 
 }
 
 .txt-aquarel{
@@ -446,78 +437,77 @@ blockquote {
   background-size: cover;
   background-position: center;
   text-align: left;
-  padding: 100px; /* Подстройте этот отступ под ваш макет */
-  color: #285e2d; /* Или любой другой цвет текста, который хорошо виден на вашем фоне */
+  padding: 100px; 
+  color: #285e2d; 
   height: 10em;
   font-size: 20px;
 }
 
 .hero-text {
   margin-top: 100px;
-  max-width: 600px; /* Или ширина, которая вам нужна */
+  max-width: 600px; 
   text-align: center;
   margin: auto;
 }
 
 h1 {
-  font-size: 2em; /* Или размер, который вам нужен */
-  font-weight: bold; /* Для более жирного шрифта */
-  margin-bottom: 20px; /* Отступ перед кнопкой */
+  font-size: 2em;
+  font-weight: bold; 
+  margin-bottom: 20px; 
 }
 
 .emphasis {
-  color: #285e2d; /* Цвет для выделения части заголовка */
+  color: #285e2d; 
 }
 
 .shop-button {
-  display: inline-block; /* Чтобы кнопка не растягивалась на всю ширину */
+  display: inline-block; 
   padding: 10px 20px;
-  border: 2px solid #285e2d; /* Граница кнопки */
-  text-decoration: none; /* Убрать подчеркивание у ссылки */
-  color: #285e2d; /* Цвет текста ссылки */
-  background-color: transparent; /* Прозрачный фон */
-  font-size: 1em; /* Размер текста в кнопке */
+  border: 2px solid #285e2d; 
+  text-decoration: none; 
+  color: #285e2d; 
+  background-color: transparent; 
+  font-size: 1em; 
 }
 
-/* Добавьте медиа-запросы для адаптивного дизайна */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 50px; /* Меньше отступы для мобильных устройств */
+    padding: 50px; 
   }
 
   .hero-text {
-    max-width: 100%; /* Чтобы текст занимал всю ширину */
+    max-width: 100%; 
   }
 
   h1 {
-    font-size: 1.5em; /* Меньший размер шрифта для мобильных устройств */
+    font-size: 1.5em; 
   }
 
   .shop-button {
-    padding: 8px 16px; /* Меньший паддинг для кнопки на мобильных устройствах */
+    padding: 8px 16px; 
   }
 }
 
 
 .footer-container {
-  color: #285e2d; /* Белый текст */
+  color: #285e2d;
   display: flex;
-  justify-content: space-between; /* Распределение по ширине */
-  padding: 20px; /* Отступы внутри футера */
-  font-family: Arial, sans-serif; /* Шрифт, как на изображении */
+  justify-content: space-between;
+  padding: 20px; 
+  font-family: Arial, sans-serif; 
 }
 
 .footer-section h4 {
-  margin-bottom: 10px; /* Отступ заголовка от списка */
+  margin-bottom: 10px;
 }
 
 .footer-section ul {
-  list-style: none; /* Убираем стандартные маркеры списка */
-  padding: 0; /* Убираем стандартные отступы списка */
+  list-style: none; 
+  padding: 0; 
 }
 
 .footer-section ul li a {
-  color: #285e2d; /* Белый текст ссылок */
-  text-decoration: none; /* Убираем подчеркивание у ссылок */
-  font-size: 0.9em; /* Размер текста ссылок */
+  color: #285e2d; 
+  text-decoration: none;
+  font-size: 0.9em;
 }
