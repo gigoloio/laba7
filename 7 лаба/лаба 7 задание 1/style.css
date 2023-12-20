@@ -40,7 +40,7 @@ body {
     background-color: #333;
     display: flex;
     align-items: center;
-    margin-right: 20px; /* Добавляем отступ между ссылками и поисковой строкой */
+    margin-right: 20px; 
 }
   
 .navbar-links a {
@@ -80,79 +80,76 @@ body {
     color: #3d3d3d;
 }
 
-/* Адаптивные стили для мобильных устройств */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: center;
-        padding: 10px 0; /* Уменьшенные отступы */
+        padding: 10px 0;
     }
 
     .logo img {
         margin-left: 0;
-        max-height: 40px; /* Уменьшение размера логотипа */
+        max-height: 40px; 
     }
 
     .navbar-controls {
         margin-right: 0;
-        width: 100%; /* Занимает всю ширину */
+        width: 100%; 
         align-items: center;
-        flex-direction: column; /* Вертикальное выравнивание элементов */
+        flex-direction: column;
     }
 
     .navbar-links {
-        flex-direction: column; /* Ссылки располагаются вертикально */
+        flex-direction: column; 
         width: 100%;
         align-items: center;
-        margin-right: 0; /* Убираем отступ справа */
+        margin-right: 0; 
     }
 
     .navbar-links a {
-        padding: 5px; /* Увеличиваем отступ для ссылок для лучшего нажатия на мобильных устройствах */
-        width: 100%; /* Ссылки занимают всю ширину */
-        text-align: center; /* Выравнивание текста по центру */
+        padding: 5px; 
+        width: 100%; 
+        text-align: center; 
     }
 
     .search-container {
-        width: 100%; /* Поисковая строка занимает всю ширину */
+        width: 100%;
     }
 
     .search-container form {
-        flex-direction: column; /* Ввод и кнопка располагаются вертикально */
+        flex-direction: column; 
         align-items: center;
     }
 
     .search-container input[type="text"], 
     .search-container button {
-        width: 100%; /* Элементы формы занимают всю ширину */
-        margin: 5px 0; /* Добавляем отступ сверху и снизу */
+        width: 100%; 
+        margin: 5px 0; 
     }
 }
 
 .kartinka1 {
     width: 100%;
     filter: brightness(60%);
-    height: 100%; /* Высота изображения растягивается на всю высоту контейнера */
-    object-fit: cover; /* Изображение заполняет контейнер, сохраняя при этом свои пропорции */
+    height: 100%; 
+    object-fit: cover; 
 }
 
 .image-container {
-    width: 100%; /* Или любая другая ширина, которую вы хотите задать */
-    height: 40em; /* Фиксированная высота контейнера */
-    overflow: hidden; /* Скрыть части изображения, выходящие за пределы контейнера */
+    width: 100%; 
+    height: 40em; 
+    overflow: hidden; 
 }
 
-/* Адаптивные стили для планшетов */
 @media (max-width: 768px) {
     .image-container {
-        height: 30em; /* Уменьшенная высота контейнера для планшетов */
+        height: 30em; 
     }
 }
 
-/* Адаптивные стили для мобильных устройств */
 @media (max-width: 480px) {
     .image-container {
-        height: 20em; /* Еще более уменьшенная высота контейнера для мобильных устройств */
+        height: 20em; 
     }
 }
 
@@ -164,12 +161,11 @@ body {
 
 @media (max-width: 1600px) {
     .body {
-        padding: 0 2em; /* Убираем padding на экранах меньше 1600px */
+        padding: 0 2em;
     }
 }
 
 .txt-main{
-/*margin: 0 20em;*/
 margin-top: 2em;
 color: #FFCEA9;
 }
@@ -186,31 +182,30 @@ color: #FFCEA9;
     color: #DFBA61;
 }
 
-/* Объединённые медиа-запросы для адаптивности */
 @media (max-width: 1300px) {
     .txt-main{
         margin-top: 2em;
         padding: auto;
     }
     .txt-bottom {
-        flex-direction: column; /* Текстовые блоки располагаются вертикально */
+        flex-direction: column; 
     }
 
     .salam, .alleykum {
-        margin: auto; /* Для центрирования блока */
+        margin: auto; 
         text-align: center;
-        width: 100%; /* Элементы занимают всю ширину контейнера */
+        width: 100%; 
         margin-left: 0;
-        margin-bottom: 2em; /* Добавляем нижний отступ между блоками */
+        margin-bottom: 2em; 
     }
 
     .alleykum {
-        margin-bottom: 0; /* Убираем нижний отступ у последнего элемента */
+        margin-bottom: 0; 
     }
 
     .kratkiy-sujet {
-        width: 50%; /* Процент от ширины родительского элемента */
-        margin: auto; /* Для центрирования блока */
+        width: 50%;
+        margin: auto; 
     }
 }
 
@@ -259,27 +254,26 @@ p {
 }
 
 
-/* Медиа-запросы для адаптивности */
 @media (max-width: 1500px) {
     .text-image-container {
-        flex-direction: column-reverse; /* Картинка теперь над текстом */
-        align-items: center; /* Выравнивание элементов по центру */
+        flex-direction: column-reverse; 
+        align-items: center; 
     }
 
     .text-section, .image-section {
-        width: 100%; /* Элементы занимают всю ширину контейнера */
-        margin-left: 0; /* Убираем левый отступ */
+        width: 100%; 
+        margin-left: 0; 
     }
 
     .text-section {
-        margin-top: 2em; /* Добавляем верхний отступ для текстовой секции */
+        margin-top: 2em; 
     }
 
     .image-section img {
         margin: auto;
-        width: 50%; /* Изображение занимает всю ширину контейнера */
-        height: auto; /* Высота изображения адаптируется автоматически */
-        margin-left: 0; /* Убираем левый отступ у изображения */
+        width: 50%; 
+        height: auto; 
+        margin-left: 0; 
     }
 }
 
@@ -301,29 +295,28 @@ p {
 }
 
 .centered-image-item img {
-    width: auto; /* Или другая ширина по вашему выбору */
-    height: 25em; /* Сохранение пропорций изображения */
+    width: auto; 
+    height: 25em; 
 }
 
 .centered-image-caption {
-    margin-top: 10px; /* Отступ для подписи */
+    margin-top: 10px; 
     color: #FFCEA9;
 }
 
-/* Медиа-запросы для адаптивности */
 @media (max-width: 1600px) {
     .centered-images-block {
-        flex-direction: column; /* Элементы располагаются вертикально */
-        gap: 10px; /* Меньше пространства между элементами */
+        flex-direction: column; 
+        gap: 10px; 
     }
 
     .centered-image-item img {
-        width: 70%; /* Ширина изображения занимает всю ширину контейнера */
-        height: auto; /* Высота изображения адаптируется автоматически */
+        width: 70%; 
+        height: auto; 
     }
 
     .centered-image-item {
-        margin-left: 0; /* Убираем левый отступ */
+        margin-left: 0; 
     }
 }
 
@@ -333,7 +326,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Для вертикального выравнивания элементов в футере */
+    flex-direction: column; 
     margin-top: 3em;
     background-color: #333;
 }
@@ -341,15 +334,15 @@ footer {
 .social {
     margin-top: 2em;
     display: flex;
-    justify-content: center; /* Центрирование иконок соцсетей */
+    justify-content: center; 
     align-items: center;
-    gap: 2em; /* Расстояние между иконками */
+    gap: 2em; 
     padding-bottom: 2em;
     background-color: #333;
 }
 
 .social img {
-    width: 3em; /* Или другой размер, подходящий для ваших иконок */
+    width: 3em; 
     height: auto;
 }
 
