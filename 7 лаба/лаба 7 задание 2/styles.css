@@ -45,14 +45,14 @@ body {
   background-size: contain; 
   background-position: center; 
   background-repeat: no-repeat; 
-  width: 100%;  /* Скрыть все слайды по умолчанию */
+  width: 100%;  
   justify-content: space-around;
   padding-top: 200px;
   position:absolute;
 }
 
 
-.picture.active { /* Показываем активный слайд */
+.picture.active { 
   display: flex;
   position: relative;
   background-size: cover;
